@@ -95,8 +95,8 @@ public class Driverscript {
    log.info("The Execution of the Method executeTestScripts has started here...");
    ReportUtil.startSuite("Scenarios");
    controllerFile=System.getProperty("user.dir")+"/Controller/data_Controller.xlsx";
-   int conrollerRowCount=datatable.rowCount(controllerFile, "Scenarios");
-   for (int tcid=0;tcid<conrollerRowCount;tcid++)
+   int controllerRowCount=datatable.rowCount(controllerFile, "Scenarios");
+   for (int tcid=0;tcid<controllerRowCount;tcid++)
    {
     String testcaseid=datatable.getCellData(controllerFile, "Scenarios", "TestcaseID", tcid+2);
     String testcasename=datatable.getCellData(controllerFile, "Scenarios", "TestcaseName", tcid+2);
